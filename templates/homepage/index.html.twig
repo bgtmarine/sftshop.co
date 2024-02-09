@@ -1,6 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+
+{% for message in app.flashes('emailContact') %}
+    <div class="flash">
+        {{ message }}
+    </div>
+{% endfor %}
+
 <section>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rem inventore voluptas dignissimos deleniti repudiandae. Aspernatur iure minus illum pariatur earum quos reprehenderit itaque eaque nobis provident distinctio, quis accusamus.</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rem inventore voluptas dignissimos deleniti repudiandae. Aspernatur iure minus illum pariatur earum quos reprehenderit itaque eaque nobis provident distinctio, quis accusamus.</p>
